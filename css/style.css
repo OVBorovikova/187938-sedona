@@ -7,7 +7,7 @@ body {
   text-transform: uppercase;
 }
 
-p, ul, span, a, input, label, button {
+p, li, span, a, input, label, button {
     font-size: 14px;
 }
 
@@ -23,14 +23,13 @@ h3 {
   font-weight: bold;
 }
 
+
 .container {
   width: 1200px;
   margin: 0 auto;
 }
 
 .main-menu {
-  background: navy;
-  min-height: 56px;
   margin: 0;
 }
 
