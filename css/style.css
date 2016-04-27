@@ -30,7 +30,23 @@ h3 {
 }
 
 .main-menu {
+  background: gray;
+  min-height: 56px;  
   margin: 0;
+  padding: 20px 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.main-menu li {
+  background: silver;
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.main-menu li:nth-child(2) {
+  margin-right: 240px;
 }
 
 .logo {
