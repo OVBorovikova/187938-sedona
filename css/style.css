@@ -5,7 +5,20 @@ body {
   color: #7b7b7b;
   font-weight: normal;
   text-transform: uppercase;
+  background: #f2f2f2;
 }
+p, li, span, input, label, button {
+  font-size: 14px;
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: #c9c9c9;
+}
+a:hover {
+  color: #81b3d2;
 }
 h1, h2 {
   font-size: 21px;
@@ -20,62 +33,179 @@ h3 {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background: white;
 }
 .main-menu {
   padding: 20px 0;
   list-style-type: none;
+  position: relative;
+  font-weight: bold;
 }
 .main-menu li {
+  width: 240px;
   display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
+}
+.main-menu li:nth-child(1), .main-menu li:nth-child(2) {
+  padding-left: 72px;
 }
 .main-menu li:nth-child(2) {
   margin-right: 240px;
+}
+.main-menu li:nth-child(3), .main-menu li:nth-child(4) {
+  padding-right: 72px;
+  text-align: right;
+}
+.main-menu-active:link {
+  color: #766357;
+}
+.main-menu-active:visited {
+  color: #dad9d7;
+}
+.main-menu-active:hover {
+  color: #604e43;
 }
 .logo {
   width: 138px;
   height: 70px;
   position: absolute;
   top: 0px;
+  left: 50%;
+  margin-left: -69px;
 }
 
 /* Главная страница */
 
 .image-block {
+  background: #ddebf4 url('../img/background-index.jpg');
   padding-top: 77px;
+  text-align: center;
 }
 .image-block-logo {
   margin-bottom: 23px;
 }
 
+/*
 .image-block-line {
+width: 1200px;
+margin: 0 auto;
 }
+*/
 
 .text-block {
+  padding: 0 330px;
+  padding-top: 64px;
+  padding-bottom: 58px;
+  text-align: center;
+}
+.text-block h1 {
+  margin: 0;
+  margin-bottom: 40px;
+}
+.text-block p {
+  margin: 0;
 }
 .reason-item {
   width: 400px;
+  display: inline-block;
   vertical-align: top;
+  color: white;
+  text-align: center;
+  padding: 55px 45px;
+  box-sizing: border-box;
+}
+.reason-item h2 {
+  color: white;
+  margin-top: 0;
+}
+.reason-item p {
+  margin-bottom: 0;
 }
 .reason-blue {
   background: #81b3d2;
 }
 .reason-img {
   width: 800px;
+  display: inline-block;
   vertical-align: top;
 }
+.reason-img img {
+  width: 800px;
+  height: 256px;
+}
+.reasons {
   background: #eeeeee;
+}
+.reason-gray {
+  color: black;
+  padding: 0 90px;
+  padding-top: 45px;
+  padding-bottom: 60px;
+}
+.reason-gray h2 {
+  margin: 0;
+  color: black;
+  margin-bottom: 26px;
+}
+.reason-gray p {
+  margin-bottom: 0;
 }
 .features-item {
   width: 400px;
+  display: inline-block;
   vertical-align: top;
+  text-align: center;
+  padding: 0 72px;
+  padding-top: 60px;
+  padding-bottom: 86px;
+  box-sizing: border-box;
+}
+.features-item:nth-child(3) {
+  padding-top: 56px;
+}
+.features-item img {
+  margin-bottom: 31px;
+}
+.features-item h2 {
+  margin-top: 0;
+  margin-bottom: 31px;
+}
+.features-item p {
+  margin: 0;
 }
 .form-title {
   margin: 0 auto;
+  padding: 0 316px;
+  padding-top: 54px;
+  text-align: center;
+}
+.form-title h3 {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.form-title p {
+  margin: 0;
+  margin-bottom: 56px;
+}
+.form-title-link {
+  background: #766357;
+  height: 87px;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+.form-title-link a {
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  margin: 30px 0;
+}
 .map {
+  background: url('../img/map.png');
   padding-bottom: 78px;
 }
 .search-form {
+  background: white;
   width: 568px;
   min-height: 395px;
   margin: 0 auto;
@@ -83,43 +213,160 @@ h3 {
 
 /* Футер */
 
+.footer-hashtag, .footer-social, .footer-copyright {
   width: 400px;
+  display: inline-block;
   vertical-align: middle;
   text-align: center;
+}
+.footer-hashtag a {
+  font-weight: bold;
+  font-size: 21px;
+}
+.footer-social {
+  margin: 36px 0;
+}
+.footer-social a {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background: #81b3d2;
+  margin-right: 6px;
+}
+.footer-social a:last-child {
+  margin-right: 0;
 }
 
 /* Гостиницы */
 
 .selection {
+  background: url('../img/background-hotels.png');
   min-height: 217px;
   padding: 0 72px;
+  padding-top: 30px;
+  color: white;
+}
+.selection h2 {
+  color: white;
+  font-size: 16px;
+  margin-top: 0;
 }
 .check {
+  width: 264px;
+  display: inline-block;
   vertical-align: top;
 }
+.check label {
+  display: block;
+}
 .cost {
+  width: 528px;
+  padding-left: 200px;
+  display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
 }
 .control {
   padding: 0 72px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .control-found {
+  width: 165px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.control-found h3 {
+  font-size: 21px;
 }
 .control-sorting {
+  width: 780px;
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sorting {
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+.control-sorting span {
+  font-size: 12px;
+  display: inline-block;
+}
+.sorting li {
+  font-size: 12px;
+  margin-left: 38px;
+  display: inline;
 }
 .control-order {
+  width: 111px;
   margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 .results article {
   padding: 30px 72px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .results-img {
+  width: 165px;
+  display: inline-block;
   vertical-align: top;
 }
+.results-img img {
+  width: 135px;
+  height: 90px;
+}
 .results-info {
+  width: 780px;
+  display: inline-block;
   vertical-align: top;
+}
+.results-about {
+  display: inline-block;
+  vertical-align: top;
+}
+.results-info h1 {
+  margin-top: -6px;
+  margin-bottom: 10px;
+}
+.results-info div span {
+  display: block;
+  margin-bottom: 19px;
+}
+.results-info div a {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 6px;
+  padding: 4px 16px;
+}
+.results-booking {
+  display: inline-block;
+  vertical-align: top;
+}
+.btn-results-more {
+  background: #81b3d2;
+}
+.btn-results-booking {
+  background: #766357;
 }
 .results-rating {
   width: 110px;
+  display: inline-block;
   vertical-align: top;
+}
+.ratings-stars {
+  background: pink;
+  width: 110px;
+  height: 17px;
+  margin-bottom: 47px;
+}
+.results-rating span {
+  display: block;
+  background: #f2f2f2;
+  padding: 4px;
+  text-align: center;
+  vertical-align: bottom;
 }
