@@ -14,7 +14,7 @@
       <nav>
         <ul class="main-menu">
           <li>
-            <a href="#" class="main-menu-active">Информация</a>
+            <a href="#">Информация</a>
           </li>
           <li>
             <a href="#">Фото и видео</a>
@@ -23,7 +23,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="hotels.html">Гостиницы</a>
+            <a href="hotels.html" class="main-menu-active">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -37,27 +37,21 @@
       <form action="#" method="post">
         <div class="check">
           <h2>Инфраструктура:</h2>
-          <label>
-            <input id="pool" type="checkbox" checked> Бассейн
-          </label>
-          <label>
-            <input id="parking" type="checkbox"> Парковка
-          </label>
-          <label>
-            <input id="wifi" type="checkbox"> Wi-Fi
-          </label>
+          <input id="pool" type="checkbox" checked>
+          <label for="pool">Бассейн</label>
+          <input id="parking" type="checkbox">
+          <label for="parking">Парковка</label>
+          <input id="wifi" type="checkbox">
+          <label for="wifi">Wi-Fi</label>
         </div>
         <div class="check">
           <h2>Тип жилья:</h2>
-          <label>
-            <input id="hotel" type="checkbox" checked> Гостиница
-          </label>
-          <label>
-            <input id="motel" type="checkbox" checked> Мотель
-          </label>
-          <label>
-            <input id="aparments" type="checkbox" checked> Аппартаменты
-          </label>
+          <input id="hotel" type="checkbox" checked>
+          <label for="hotel">Гостиница</label>
+          <input id="motel" type="checkbox" checked>
+          <label for="motel">Мотель</label>
+          <input id="aparments" type="checkbox" checked>
+          <label for="aparments">Аппартаменты</label>
         </div>
         <div class="cost">
           <h2>Стоимость в сутки (р):</h2>
@@ -82,16 +76,14 @@
           <li><a href="#">По рейтингу</a></li>
         </ul>
       </div>
-
       <ul class="control-order">
         <li>
-          <a href="#" class="control-arrow-up control-active"></a>
+          <span class="icon-up-dir"></span>
         </li>
         <li>
-          <a href="#" class="control-arrow-down"></a>
+          <span class="icon-down-dir"></span>
         </li>
       </ul>
-
     </section>
     <section class="results">
       <article>
@@ -100,18 +92,18 @@
         </div>
         <div class="results-info">
           <h1><a href="#">Amara Resort &amp; SPA</a></h1>
-          <div class="results-about">
+          <div class="results-info-item">
             <span>Гостиница</span>
-            <a href="#" class="btn-results-more">Подробнее</a>
+            <a href="#" class="btn-results-blue">Подробнее</a>
           </div>
-          <div class="results-booking">
+          <div class="results-info-item">
             <span>От 3500 р.</span>
-            <a href="#" class="btn-results-booking">Забронировать</a>
+            <a href="#" class="btn-results-brown">Забронировать</a>
           </div>
         </div>
         <div class="results-rating">
           <div class="ratings-stars ratings-stars-four"></div>
-          <span>Рейтинг: 8,5</span>
+          <span class="rating">Рейтинг: 8,5</span>
         </div>
       </article>
       <article>
@@ -120,18 +112,18 @@
         </div>
         <div class="results-info">
           <h1><a href="#">Desert Quail Inn</a></h1>
-          <div class="results-about">
+          <div class="results-info-item">
             <span>Мотель</span>
-            <a href="#" class="btn-results-more">Подробнее</a>
+            <a href="#" class="btn-results-blue">Подробнее</a>
           </div>
-          <div class="results-booking">
+          <div class="results-info-item">
             <span>От 2000 р.</span>
-            <a href="#" class="btn-results-booking">Забронировать</a>
+            <a href="#" class="btn-results-brown">Забронировать</a>
           </div>
         </div>
         <div class="results-rating">
           <div class="ratings-stars ratings-stars-two"></div>
-          <span>Рейтинг: 8,9</span>
+          <span class="rating">Рейтинг: 8,9</span>
         </div>
       </article>
       <article>
@@ -140,18 +132,18 @@
         </div>
         <div class="results-info">
           <h1><a href="#">Villas At Poco Diablo</a></h1>
-          <div class="results-about">
+          <div class="results-info-item">
             <span>Апартаменты</span>
-            <a href="#" class="btn-results-more">Подробнее</a>
+            <a href="#" class="btn-results-blue">Подробнее</a>
           </div>
-          <div class="results-booking">
+          <div class="results-info-item">
             <span>От 4000 р.</span>
-            <a href="#" class="btn-results-booking">Забронировать</a>
+            <a href="#" class="btn-results-brown">Забронировать</a>
           </div>
         </div>
         <div class="results-rating">
-          <div class="ratings-stars ratings-stars-two"></div>
-          <span>Рейтинг: 9,2</span>
+          <div class="ratings-stars ratings-stars-three"></div>
+          <span class="rating">Рейтинг: 9,2</span>
         </div>
       </article>
     </section>
@@ -160,14 +152,14 @@
         <a href="#">#visitsedona</a>
       </div>
       <div class="footer-social">
-        <a href="https://twitter.com/" class="social-item" target="_blank"></a>
-        <a href="http://fb.com/" class="social-item" target="_blank"></a>
-        <a href="http://youtube.com/" class="social-item" target="_blank"></a>
+        <a href="https://twitter.com/" class="social" target="_blank"><span class="icon-twitter"></span>Twitter</a>
+        <a href="http://fb.com/" class="social" target="_blank"><span class="icon-facebook"></span>Facebook</a>
+        <a href="http://youtube.com/" class="social" target="_blank"><span class="icon-youtube"></span>YouTube</a>
       </div>
       <div class="footer-copyright">
         <a href="https://htmlacademy.ru" target="_blank">
           <span>Website by</span>
-          <img src="img/htmlacadmy-logo.png" width="113" height="134" alt="HTML academy" />
+          <span class="copyright-sprite"></span>
         </a>
       </div>
     </footer>
