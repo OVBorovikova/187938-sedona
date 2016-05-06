@@ -109,24 +109,32 @@
     </section>
     <section class="map">
       <form class="search-form" action="#" method="post">
-        <div>
-          <label for="check-in">Дата заезда</label>
+        <div class="left-column">
+          <label for="check-in">Дата заезда:</label>
+        </div>
+        <div class="right-column">
           <input id="check-in" type="date" name="check-in" value="">
         </div>
-        <div>
-          <label for="check-out">Дата выезда</label>
+        <div class="left-column">
+          <label for="check-out">Дата выезда:</label>
+        </div>
+        <div class="right-column">
           <input id="check-out" type="date" name="check-out" value="">
         </div>
-        <div>
-          <label for="adults">Взрослые</label>
+        <div class="left-column">
+          <label for="adults">Взрослые:</label>
+        </div>
+        <div class="narrow-column">
           <button class="btn-remove" type="button">-</button>
-          <input id="adults" type="number" name="adults" value="2">
+          <input class="short-input" id="adults" type="text" name="adults" value="2">
           <button class="btn-add" type="button">+</button>
         </div>
-        <div>
-          <label for="children">Дети</label>
+        <div class="left-column column-children">
+          <label for="children">Дети:</label>
+        </div>
+        <div class="narrow-column">
           <button class="btn-remove" type="button">-</button>
-          <input id="children" type="number" name="children" value="0">
+          <input class="short-input" id="children" type="text" name="children" value="0">
           <button class="btn-add" type="button">+</button>
         </div>
         <button class="btn-search-form" type="submit">Найти</button>
@@ -137,9 +145,15 @@
         <a href="#">#visitsedona</a>
       </div>
       <div class="footer-social">
-        <a href="https://twitter.com/" class="social" target="_blank"><span class="icon-twitter"></span>Twitter</a>
-        <a href="http://fb.com/" class="social" target="_blank"><span class="icon-facebook"></span>Facebook</a>
-        <a href="http://youtube.com/" class="social" target="_blank"><span class="icon-youtube"></span>YouTube</a>
+        <a href="https://twitter.com/" class="social-btn" target="_blank">
+          <span class="icon-twitter"></span>Twitter
+        </a>
+        <a href="http://fb.com/" class="social-btn" target="_blank">
+          <span class="icon-facebook"></span>Facebook
+        </a>
+        <a href="http://youtube.com/" class="social-btn" target="_blank">
+          <span class="icon-youtube"></span>YouTube
+        </a>
       </div>
       <div class="footer-copyright">
         <a href="https://htmlacademy.ru" target="_blank">

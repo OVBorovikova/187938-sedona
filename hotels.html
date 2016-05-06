@@ -55,12 +55,21 @@
         </div>
         <div class="cost">
           <h2>Стоимость в сутки (р):</h2>
-          <label for="min-range">От</label>
-          <input id="min-range" type="number" value="0">
-          <label for="max-range">До</label>
-          <input id="max-range" type="number" value="3000">
-          <input type="range" min="0" max="3000">
-          <button class="btn-filter" type="submit">Найти</button>
+          <div class="price-control">
+            <label class="min-range">От
+              <input name="min-range" type="text" value="0"></label>
+            <label class="max-range">До
+              <input name="max-range" type="text" value="3000"></label>
+          </div>
+          <div class="range">
+            <div class="scale">
+              <div class="bar">
+              </div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+            <button class="btn-filter" type="submit">Показать</button>
         </div>
       </form>
     </section>
@@ -152,9 +161,15 @@
         <a href="#">#visitsedona</a>
       </div>
       <div class="footer-social">
-        <a href="https://twitter.com/" class="social" target="_blank"><span class="icon-twitter"></span>Twitter</a>
-        <a href="http://fb.com/" class="social" target="_blank"><span class="icon-facebook"></span>Facebook</a>
-        <a href="http://youtube.com/" class="social" target="_blank"><span class="icon-youtube"></span>YouTube</a>
+        <a href="https://twitter.com/" class="social-btn" target="_blank">
+          <span class="icon-twitter"></span>Twitter
+        </a>
+        <a href="http://fb.com/" class="social-btn" target="_blank">
+          <span class="icon-facebook"></span>Facebook
+        </a>
+        <a href="http://youtube.com/" class="social-btn" target="_blank">
+          <span class="icon-youtube"></span>YouTube
+        </a>
       </div>
       <div class="footer-copyright">
         <a href="https://htmlacademy.ru" target="_blank">
