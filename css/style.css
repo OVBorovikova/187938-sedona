@@ -344,6 +344,12 @@ header {
   margin-left: -35px;
   cursor: pointer;
 }
+.right-column-icon:hover {
+  color: black;
+}
+.right-column-icon:active {
+  color: #81b3d2;
+}
 .narrow-column {
   display: inline-block;
   vertical-align: top;
@@ -388,7 +394,7 @@ header {
   padding-left: 50px;
   box-sizing: border-box;
 }
-.btn-remove, .btn-add {
+.btn-add {
   display: inline-block;
   vertical-align: top;
   border: 0;
@@ -401,6 +407,12 @@ header {
   font-size: 14px;
   line-height: 38px;
   color: #a9a9a9;
+}
+.btn-add-icon:hover{
+  color: black;
+}
+.btn-add-icon:active{
+  color: #81b3d2;
 }
 .btn-search-form {
   background: #81b3d2;
