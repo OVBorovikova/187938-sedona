@@ -333,6 +333,17 @@ header {
   width: 345px;
   margin-bottom: 30px;
 }
+.right-column input {
+  position: relative;
+}
+.right-column-icon {
+  font-size: 21px;
+  line-height: 38px;
+  color: #c2c2c2;
+  position: absolute;
+  margin-left: -35px;
+  cursor: pointer;
+}
 .narrow-column {
   display: inline-block;
   vertical-align: top;
@@ -385,6 +396,11 @@ header {
   width: 38px;
   height: 38px;
   cursor: pointer;
+}
+.btn-add-icon {
+  font-size: 14px;
+  line-height: 38px;
+  color: #a9a9a9;
 }
 .btn-search-form {
   background: #81b3d2;
@@ -709,6 +725,12 @@ li .control-active, li .control-active:hover, li .control-active:active {
 }
 .control-order span:hover {
   color: black;
+}
+.control-order span:active {
+  color: #81b3d2;
+}
+.control-order .control-order-active:hover {
+  color: #81b3d2;
 }
 
 /* Результаты поиска */

@@ -113,29 +113,37 @@
           <label for="check-in">Дата заезда:</label>
         </div>
         <div class="right-column">
-          <input id="check-in" type="date" name="check-in" value="">
+          <input id="check-in" type="text" name="check-in" value="24 апреля 2016">
+          <i class="right-column-icon icon-calendar"></i>
         </div>
         <div class="left-column">
           <label for="check-out">Дата выезда:</label>
         </div>
         <div class="right-column">
-          <input id="check-out" type="date" name="check-out" value="">
+          <input id="check-out" type="text" name="check-out" value="4 июля 2016">
+          <i class="right-column-icon icon-calendar"></i>
         </div>
         <div class="left-column">
           <label for="adults">Взрослые:</label>
         </div>
         <div class="narrow-column">
-          <button class="btn-remove" type="button">-</button>
+          <button class="btn-remove" type="button">
+            <i class="btn-add-icon icon-minus"></i>-
+          </button>
           <input class="short-input" id="adults" type="text" name="adults" value="2">
-          <button class="btn-add" type="button">+</button>
+          <button class="btn-add" type="button">
+            <i class="btn-add-icon icon-plus"></i>+
+          </button>
         </div>
         <div class="left-column column-children">
           <label for="children">Дети:</label>
         </div>
         <div class="narrow-column">
-          <button class="btn-remove" type="button">-</button>
+          <button class="btn-remove" type="button">
+            <i class="btn-add-icon icon-minus"></i>-</button>
           <input class="short-input" id="children" type="text" name="children" value="0">
-          <button class="btn-add" type="button">+</button>
+          <button class="btn-add" type="button">
+            <i class="btn-add-icon icon-plus"></i>+</button>
         </div>
         <button class="btn-search-form" type="submit">Найти</button>
       </form>
