@@ -288,38 +288,53 @@ header {
 }
 .form-title p {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
   line-height: 24px;
 }
-.form-title-link {
-  background: #766357;
-  height: 87px;
-  padding: 30px 0;
-  box-sizing: border-box;
-}
 .form-title-link a {
+  display: block;
+  padding: 30px;
+  background: #766357;
   color: white;
   font-weight: bold;
   font-size: 21px;
-  margin: 30px 0;
 }
 .form-title-link a:active {
   opacity: 1;
 }
 .map {
-  background: url('../img/map.png');
-  padding-bottom: 78px;
+  background: url('../img/map.png') no-repeat;
+  position: relative;
+  margin-bottom: -120px;
+  z-index: 10;
 }
 
 /* Форма */
 
+@keyframes translate {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .search-form {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -284px;
   background: white;
   width: 568px;
-  margin: 0 auto;
   padding: 55px;
   box-sizing: border-box;
   box-shadow: 0px 0 15px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  animation-name: translate;
+  animation-duration: 0.3s;
+}
+.search-form-show {
+  display: block;
 }
 .left-column {
   display: inline-block;
@@ -408,10 +423,10 @@ header {
   line-height: 38px;
   color: #a9a9a9;
 }
-.btn-add-icon:hover{
+.btn-add-icon:hover {
   color: black;
 }
-.btn-add-icon:active{
+.btn-add-icon:active {
   color: #81b3d2;
 }
 .btn-search-form {
@@ -436,11 +451,17 @@ header {
 
 /* Футер */
 
+footer {
+  min-height: 120px;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 20;
+  position: relative;
+  text-align: center;
+}
 .footer-hashtag, .footer-social, .footer-copyright {
   width: 400px;
   display: inline-block;
   vertical-align: middle;
-  text-align: center;
   padding: 36px 0;
 }
 .footer-hashtag a {
