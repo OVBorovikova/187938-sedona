@@ -6,7 +6,7 @@
   <title>Седона</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -104,7 +104,7 @@
       <h3>Заинтересовались?</h3>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <div class="form-title-link">
-        <a href="#">Поиск гостиницы в Седоне</a>
+        <a href="form.html">Поиск гостиницы в Седоне</a>
       </div>
     </section>
     <section class="map">
@@ -173,15 +173,7 @@
       </div>
     </footer>
   </div>
-  <script>
-    var link = document.querySelector(".form-title-link");
-    var popup = document.querySelector(".search-form");
-
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      popup.classList.toggle("search-form-show");
-    });
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

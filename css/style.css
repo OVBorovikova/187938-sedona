@@ -303,8 +303,9 @@ header {
   opacity: 1;
 }
 .map {
-  background: url('../img/map.png') no-repeat;
+  background: url('../img/map.png') #cbdda9 no-repeat;
   position: relative;
+  min-height: 593px;
   margin-bottom: -120px;
   z-index: 10;
 }
@@ -574,6 +575,9 @@ input[type="checkbox"] + label::before {
 input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
+input[type="checkbox"]:disabled + label::before {
+  color: #6a6a6a;
+}
 
 /* Слайдер */
 
@@ -750,6 +754,7 @@ li .control-active, li .control-active:hover, li .control-active:active {
   position: relative;
 }
 .icon-up-dir {
+  color: #cccccc;
   left: 20px;
 }
 .icon-down-dir {
