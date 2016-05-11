@@ -1,5 +1,5 @@
 body {
-  font-family: 'PT Sans', 'Tahoma', sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 0;
   line-height: normal;
   color: #7b7b7b;
@@ -180,7 +180,7 @@ header {
 /* Главная страница */
 
 .image-block {
-  background: #ddebf4 url('../img/background-index.jpg') no-repeat;
+  background: #ddebf4 url("../img/background-index.jpg") no-repeat;
   background-position: 0 -55px;
   padding-top: 77px;
   text-align: center;
@@ -303,7 +303,7 @@ header {
   opacity: 1;
 }
 .map {
-  background: url('../img/map.png') #cbdda9 no-repeat;
+  background: url("../img/map.png") #cbdda9 no-repeat;
   position: relative;
   min-height: 593px;
   margin-bottom: -120px;
@@ -530,7 +530,7 @@ footer {
 .copyright-sprite {
   width: 113px;
   height: 40px;
-  background: url('../img/htmlacadmy-logo.png') no-repeat;
+  background: url("../img/htmlacadmy-logo.png") no-repeat;
   margin-left: 8px;
 }
 .copyright-sprite:hover {
@@ -543,7 +543,7 @@ footer {
 /* Гостиницы */
 
 .selection {
-  background: url('../img/background-hotels.png') #766357 no-repeat;
+  background: url("../img/background-hotels.png") #766357 no-repeat;
   background-position: 0 -55px;
   padding: 27px 72px;
   padding-bottom: 6px;
