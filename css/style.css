@@ -97,7 +97,7 @@ body {
 p, li, span {
   font-size: 14px;
 }
-a:link {
+a {
   color: #000000;
   text-decoration: none;
 }
@@ -210,7 +210,7 @@ header {
   color: white;
   text-align: center;
   padding: 55px 45px;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
   box-sizing: border-box;
 }
 .reason-item h2 {
@@ -218,6 +218,7 @@ header {
   margin-top: 0;
   line-height: 21px;
   margin-bottom: 25px;
+  padding: 0 50px;
 }
 .reason-item p {
   margin-top: 25px;
@@ -415,7 +416,8 @@ header {
 }
 .search-form input:active, .narrow-column input:active, .search-form input:focus, .narrow-column input:focus {
   background: white;
-  outline: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
+  outline: none;
 }
 .search-form .short-input {
   width: 38px;
@@ -432,16 +434,16 @@ header {
   width: 38px;
   height: 38px;
   cursor: pointer;
+  color: #a9a9a9;
 }
 .btn-add-icon {
   font-size: 14px;
   line-height: 38px;
-  color: #a9a9a9;
 }
-.btn-add-icon:hover {
+.btn-add:hover {
   color: #000000;
 }
-.btn-add-icon:active {
+.btn-add:active {
   color: #81b3d2;
 }
 .btn-search-form {
@@ -494,23 +496,25 @@ footer {
   position: relative;
   background-color: #81b3d2;
   text-align: center;
+  color: white;
 }
 .social-btn:last-child {
   margin-right: 0;
 }
-.social-btn span {
-  font-size: 19px;
-  line-height: 48px;
-  color: white;
-}
 .social-btn:hover {
   background: #669ec0;
+  color: white;
 }
 .social-btn:active {
   opacity: 1;
-}
-.social-btn:active span {
   color: rgba(255, 255, 255, 0.3);
+}
+.social-btn:visited {
+  color: white;
+}
+.icon-twitter::before, .icon-facebook::before, .icon-youtube::before {
+  font-size: 19px;
+  line-height: 48px;
 }
 .footer-copyright span {
   display: inline-block;
@@ -631,7 +635,8 @@ input[type="checkbox"]:disabled + label::before {
 .price-control label {
   font-size: 14px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
+  ;
   line-height: 29px;
 }
 .price-control .min-range {
