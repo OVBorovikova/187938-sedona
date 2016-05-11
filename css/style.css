@@ -1,6 +1,6 @@
 body {
   font-family: 'PT Sans', 'Tahoma', sans-serif;
-  font-size: 0px;
+  font-size: 0;
   line-height: normal;
   color: #7b7b7b;
   font-weight: normal;
@@ -125,7 +125,7 @@ h3 {
   width: 1200px;
   margin: 0 auto;
   background: white;
-  box-shadow: 0px 0 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 header {
   position: relative;
@@ -169,7 +169,7 @@ header {
   width: 138px;
   height: 70px;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 50%;
   margin-left: -69px;
 }
@@ -181,6 +181,7 @@ header {
 
 .image-block {
   background: #ddebf4 url('../img/background-index.jpg') no-repeat;
+  background-position: 0 -55px;
   padding-top: 77px;
   text-align: center;
 }
@@ -255,7 +256,7 @@ header {
 .features-item {
   width: 400px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: center;
   padding: 0 72px;
   padding-top: 60px;
@@ -340,7 +341,7 @@ header {
   width: 568px;
   padding: 55px;
   box-sizing: border-box;
-  box-shadow: 0px 0 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   display: none;
   -webkit-animation-name: translate;
   animation-name: translate;
@@ -543,6 +544,7 @@ footer {
 
 .selection {
   background: url('../img/background-hotels.png') #766357 no-repeat;
+  background-position: 0 -55px;
   padding: 27px 72px;
   padding-bottom: 6px;
   color: white;
@@ -632,9 +634,13 @@ input[type="checkbox"]:disabled + label::before {
   vertical-align: top;
   line-height: 29px;
 }
-.price-control .min-range, .price-control .max-range {
+.price-control .min-range {
   width: 90px;
   padding-left: 65px;
+}
+.price-control .max-range {
+  width: 90px;
+  padding-left: 55px;
 }
 .price-control input {
   width: 50px;
@@ -720,17 +726,22 @@ input[type="checkbox"]:disabled + label::before {
 .control-sorting span {
   font-size: 12px;
   display: inline-block;
+  vertical-align: middle;
   line-height: 18px;
 }
 .sorting {
   padding: 0;
   list-style-type: none;
+  vertical-align: middle;
   display: inline-block;
 }
 .sorting li {
   font-size: 12px;
-  margin-left: 40px;
+  margin-left: 30px;
   display: inline;
+}
+.sorting li:first-child {
+  margin-left: 40px;
 }
 .sorting a {
   color: rgba(0, 0, 0, 0.3);
@@ -760,6 +771,7 @@ li .control-active, li .control-active:hover, li .control-active:active {
 }
 .control-order li {
   display: inline-block;
+  vertical-align: middle;
 }
 .control-order span {
   font-size: 23px;
@@ -820,6 +832,7 @@ li .control-active, li .control-active:hover, li .control-active:active {
 }
 .results-info-item span {
   display: block;
+  width: 116px;
   margin-bottom: 20px;
   line-height: 21px;
 }
